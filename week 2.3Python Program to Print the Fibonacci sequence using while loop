@@ -1,18 +1,45 @@
-n=int(input("Enter the n value"))
-a=0
-b=1
-c=0
-if n<=0:
-    print("Enter possitive number")
+#using recursion
+
+def fibonacci(n):
+    if n==0 or n==1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+
+
+n=int(input())
+if n==0:
+    print("Please enter a positive integer")
 elif n==1:
-    print(a)
+    print("Fibonacci sequence upto 1 :")
+    print(0)
 else:
-    print("Fibnonaaci series")
+    for i in range(n):
+        print(fibonacci(i))
+
+
+
+
+#without recursion
+
+# You are using Python
+def fibonacci(n):
+    a=0
+    b=1
     print(a)
     print(b)
-    while(c<n):
+    c=a+b
+    for c in range(c,n-1):
         c=a+b
-        print(c," ")
+        print(c)
         a=b
         b=c
 
+n=int(input())
+if n==0:
+    print("Please enter a positive integer")
+elif n==1:
+    print("Fibonacci sequence upto 1 :")
+    print(0)
+else:
+    fibonacci(n)
