@@ -1,1 +1,13 @@
+ch=input()
+if ch.islower():
+    print("Lower case letter")
+elif ch.isupper():
+    print("Upper case letter")
+elif ch.isdigit():
+    print("Digit letter")
+else:
+    print("special case letter")
+
+
+
 
