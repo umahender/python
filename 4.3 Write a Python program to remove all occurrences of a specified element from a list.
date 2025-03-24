@@ -1,0 +1,10 @@
+# You are using Python
+words=input()
+search=input()
+li=words.split( )
+x=[]
+for i in li:
+    if search!=i:
+        x.append(i)
+    
+print(x)
