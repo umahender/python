@@ -1,0 +1,10 @@
+word=input()
+
+str1=word.split(" ")
+
+# for cap in str1:
+#     cap_words=cap[0].upper()+cap[1:]
+
+# print(cap_words)
+for w in str1:
+    print(w[0].upper()+w[1:],end=" ")
