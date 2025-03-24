@@ -1,0 +1,12 @@
+str1=input()
+
+word=""
+
+for i in range(len(str1)):
+    word=word+str1[i]
+    
+    if i != len(str1)-1:
+        word=word+","
+
+
+print(word)
