@@ -3,23 +3,10 @@ representation of the Rectangle on the Canvas.
 '''
 from tkinter import *
 
-from matplotlib.patches import Rectangle
 
+root = tk.Tk()
 
-class Canvas(object):
-        a_canvas = Canvas()
-        a_canvas.width = 500
-        a_canvas.height = 500
-
-class Rectangle(object):
-       p=Canvas()
-       box = p.create_Rectangle() box.color = 'orange'
-       box.bbox = [[-100, -60],[100, 60]]
-def draw_rectangle(canvas, rectangle):
-    drawn_canvas = world.ca(canvas.width, canvas.height)
-    drawn_canvas.rectangle(rectangle.bbox, fill=rectangle.color)
-    world = World()
-
-
-draw_rectangle(a_canvas, box)
-world.mainloop()
+canvas = tk.Canvas(root, width=400, height=400)
+canvas.pack()
+canvas.create_rectangle(10, 10, 100, 100, fill='blue')
+root.mainloop()
